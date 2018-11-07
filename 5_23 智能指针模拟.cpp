@@ -1,8 +1,8 @@
 #include <iostream>
 class T{
 public:
-	T(int _data):data(_data){ std::cout << "T¹¹Ôì\n" << std::endl;}
-	~T(){ std::cout<< "TÎö¹¹\n" << std::endl;}
+	T(int _data):data(_data){ std::cout << "Tæž„é€ \n" << std::endl;}
+	~T(){ std::cout<< "Tæžæž„\n" << std::endl;}
 private:
 	int data;
 }; 
@@ -10,10 +10,10 @@ class SmartPointer{
 public:
 	SmartPointer(T* p = nullptr) :ptr(p) { std::cout << "SmartPointer gouzao\n"; }
 	SmartPointer(const SmartPointer& other):ptr(other.ptr){
-		std::cout << "smartpointer ¿½±´¹¹Ôì\n"; 
+		std::cout << "smartpointer æ‹·è´æž„é€ \n"; 
 	}
 	SmartPointer(const SmartPointer&& other):ptr(other.ptr){
-		std::cout << "SmartPointer ÒÆ¶¯¹¹Ôì\n";
+		std::cout << "SmartPointer ç§»åŠ¨æž„é€ \n";
 	}
 	~SmartPointer() { 
 		std::cout << "SmartPointer xigou\n";
