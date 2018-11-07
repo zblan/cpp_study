@@ -10,7 +10,7 @@ public:
 	myString& operator=(const myString& other);
 	~myString(){
 		if(ps){
-			std::cout<< " --Destructor" << std::endl;
+			std::cout<< " -Destructor" << std::endl;
 		}else{
 			std::cout << "ps is NULL" << " --Destructor" << std::endl;
 		}
