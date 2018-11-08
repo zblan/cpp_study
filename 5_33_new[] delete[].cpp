@@ -14,7 +14,7 @@ public:
 			std::cout << "-A operator new[]\n";
 			return p;
 		}
-		throw bad_alloc();
+		throw std::bad_alloc();
 	}
 	/*static*/ void operator delete[](void* p){
 		std::cout << "A operator delete[]\n";
@@ -24,5 +24,8 @@ private:
 	int* pi;
 };
 int main(){
-	
+	A *pa = new A[3];
+	std::cout << "------\n";
+	delete[] pa;
+	return 0;
 }
