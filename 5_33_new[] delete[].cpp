@@ -23,3 +23,6 @@ public:
 private:
 	int* pi;
 };
+int main(){
+	
+}
